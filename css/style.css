@@ -1,0 +1,125 @@
+style
+
+* {
+  box-sizing: border-box;
+}
+
+a:link {
+    color:rgb(255, 238, 217)
+}
+
+a:visited {
+    color:rgb(129, 99, 62)
+}
+
+a:hover {
+    color:rgba(185, 224, 159, 0.692)
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a{
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 3px;
+  border-radius: 5px;
+}
+.pagination a.active{
+  background-color: beige;
+  color:burlywood;
+}
+.pagination a:hover:not(.active) {
+  background-color: beige;
+  color: burlywood;
+}
+
+
+body {
+  margin: 0;
+  background: url('../images/bg3.jpg') beige;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  text-align: left;
+  color: rgb(151, 120, 78);
+  text-shadow: rgb(212, 203, 203) 2px 2px 2px;
+  font-family: "Lucida Bright", Georgia, serif;
+  font-size: 130%;
+}
+
+figure {
+    
+    padding: 8px;
+    margin: 0 0 2px 0;
+}
+figure img {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+/* Style the header */
+.header {
+  
+  padding: 20px;
+  text-align: center;
+  font-family: "Lucida Handwriting";
+  color: rgb(187, 164, 133);
+  font-size: 80%;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(187, 164, 133);
+  text-align: center;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color:#5e4a4a;
+  color: beige;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 24%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 46%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
